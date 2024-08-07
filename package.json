@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prettier-plugin-prisma": "^5.0.0",
+    "prisma": "^5.1.1"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.0.4",
+    "@fastify/cors": "^8.3.0",
+    "@fastify/sensible": "^5.2.0",
+    "@prisma/client": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.21.0"
+  }
+}
